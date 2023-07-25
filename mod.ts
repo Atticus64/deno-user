@@ -20,6 +20,12 @@ const userSchema = z.object({
   name: z.string(),
 })
 
+app.get("/users", async (c) => {
+	const users = await prisma.user.findMany();
+
+	return c.json(users);
+})
+
 app.post("/users/create", validator('json', (value, c) => {
     const parsed = userSchema.safeParse(value)
     if (!parsed.success) {
