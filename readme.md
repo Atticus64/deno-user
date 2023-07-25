@@ -1,4 +1,4 @@
-## cheetah's basic template for deno
+## Hono for deno
 
 ### File Structure
 
