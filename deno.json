@@ -1,0 +1,11 @@
+{
+  "imports": {
+    "cheetah": "https://deno.land/x/cheetah@v1.1.0/mod.ts",
+    "zod": "https://deno.land/x/zod@v3.21.4/mod.ts",
+	"hono/": "https://deno.land/x/hono@v3.3.3/"
+  },
+  "tasks": {
+	"dev": "deno run --allow-net --watch --allow-env --allow-read mod.ts",
+    "upgrade": "deno run -A https://deno.land/x/upgrade@v1.0.1/mod.ts"
+  }
+}
